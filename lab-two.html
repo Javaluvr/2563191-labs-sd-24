@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        margin: 0 20px;
+        font-size: 12px;
+      }
+
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 600px;
+        height: 400px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        margin: 80px auto 0;
+      }
+
+      h3 {
+        font-weight: bold;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+      }
+
+      li {
+        display: inline;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .container {
+        display: flex;
+        padding: 20px;
+        background-color: black;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center; /* Align items vertically */
+      }
+      h1 {
+        font-size: 20px;
+        color: white;
+        margin: 0 auto; /* Remove default margin */
+        font-weight: bold;
+      }
+
+      .container-item-2 {
+        display: flex;
+        flex-direction: column; /* Display items in a column */
+      }
+
+      .our-services {
+        display: flex; /* Change display to flex */
+        justify-content: space-around; /* Adjust alignment as needed */
+        margin: 0 auto;
+      }
+
+      .section-one {
+        display: block;
+        margin: 0 auto;
+      }
+      .desc-par {
+        text-align: center;
+      }
+
+      .web-development,
+      .graphic-design {
+        border: 1px solid black;
+        padding: 10px;
+        display: inline-block; /* Add this line to make them inline */
+        width: calc(
+          50% - 20px
+        ); /* Adjust the width to fit both sections in one line */
+        margin: 0; /* Add some margin between the sections */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Welcome to Software Design Website</h1>
+      <nav>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container-item-2">
+      <section class="section-one">
+        <h3 class="section-heading">About Us</h3>
+
+        <p section="desc-par">
+          We are a company dedicated to providing excellent service to our
+          customer.
+        </p>
+        <img src="image-one.svg" alt="" />
+      </section>
+
+      <h3>Our Services</h3>
+
+      <section class="our-services">
+        <section class="web-development">
+          <h3>Web Development</h3>
+          <p class="desc-par">
+            We specialize in creating responsive and user-friendly websites.
+          </p>
+          <img src="image-two.svg" alt="" />
+        </section>
+        <section class="graphic-design">
+          <h3>Graphic Design</h3>
+          <p class="desc-par">
+            Our talented designers can bring your oideas to life with stuning
+            visuals.
+          </p>
+          <img src="image-three.svg" alt="" />
+        </section>
+      </section>
+    </main>
+
+    <footer>© 2024 The Lucky Company. All rights reserved.</footer>
+  </body>
+</html>
+
